@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kampüs Etkinlikleri - Etkinlik Güncelle</title>
+    <link rel="stylesheet" href="css/2416501088.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <header>
+        <h1>Kampüs Etkinlikleri</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a> |
+            <a href="etkinlikler.html">Etkinlikler</a> |
+            <a href="etkinlik-detay.html">Detay</a> |
+            <a href="etkinlik-ekle.html">Ekle</a> |
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-kutusu">
+            <h2>Etkinlik Güncelle</h2>
+            <form action="#" method="POST">
+                <div class="form-grup">
+                    <label for="etkinlik-adi">Etkinlik Adı:</label>
+                    <input type="text" id="etkinlik-adi" name="etkinlik-adi" value="Kariyer Günleri 2026" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori" name="kategori">
+                        <option value="seminer" selected>Seminer</option>
+                        <option value="atolye">Atölye</option>
+                        <option value="soylesi">Söyleşi</option>
+                        <option value="konser">Konser</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label for="tarih">Tarih:</label>
+                    <input type="date" id="tarih" name="tarih" value="2026-10-12" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="yer">Yer / Salon:</label>
+                    <input type="text" id="yer" name="yer" value="A Blok Konferans Salonu" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="aciklama">Açıklama:</label>
+                    <textarea id="aciklama" name="aciklama" rows="4">Kariyer olanaklarını keşfetmek, sektör profesyonelleriyle tanışmak ve geleceğinizi şekillendirmek için bu etkinlik kaçmaz!</textarea>
+                </div>
+
+                <button type="submit" class="btn-kaydet">Değişiklikleri Kaydet</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kampüs Etkinlikleri</p>
+    </footer>
+</body>
+</html>

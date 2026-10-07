@@ -1,0 +1,176 @@
+/* İbrahim Eren Yayla— 2416501088*/
+:root {
+  --no: 2416501088;
+  --ton: mod(var(--no), 360);
+  --renk-ana: hsl(var(--ton) 65% 38%);
+  --renk-zemin: hsl(var(--ton) 30% 97%);
+  --font: system-ui;
+  --bosluk-m: 1rem;
+  --kose: 8px;
+}
+
+body { 
+  font-family: var(--font); 
+  background-color: var(--renk-zemin);
+  color: #333;
+}
+.kart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--bosluk-m);
+}
+
+article.kart {
+  background: white;
+  padding: var(--bosluk-m);
+  border-radius: var(--kose);
+  border: 1px solid #ddd;
+}
+
+.detay-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--bosluk-m);
+  align-items: start;
+  background: white;
+  padding: var(--bosluk-m);
+  border-radius: var(--kose);
+  border: 1px solid #ccc;
+}
+
+.afis-alani img {
+  width: 100%;
+  border-radius: var(--kose);
+}
+
+.kunye-alani dt {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: var(--renk-ana);
+}
+
+.form-kutusu {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: var(--kose);
+  border: 1px solid #ccc;
+}
+
+.form-grup {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grup label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: var(--renk-ana);
+}
+
+.form-grup input,
+.form-grup select,
+.form-grup textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btn-kaydet {
+  background: var(--renk-ana);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Yeşil Header ve Temel Renk Tanımlamaları */
+:root {
+  --renk-ana: #1b7a36; /* Şuradaki yeşil tonu */
+  --kose: 8px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background-color: var(--renk-ana);
+  color: white;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+}
+
+.kart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.detay-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+/* Ekran küçülünce (telefonda) her şey alt alta gelsin */
+@media (max-width: 768px) {
+  .detay-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Telefon */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+}
